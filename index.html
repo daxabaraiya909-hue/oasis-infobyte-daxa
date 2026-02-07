@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>my Calculator</title>
+  <link rel="stylesheet" href="calc_style.css">
+</head>
+<body>
+
+  <div class="box">
+    <input type="text" id="screen" disabled>
+
+    <div class="keys">
+      <button onclick="resetAll()">AC</button>
+      <button onclick="removeOne()">C</button>
+      <button onclick="percentage()">%</button>
+      <button onclick="addVal('/')">/</button>
+
+
+      <button onclick="addVal('1')">1</button>
+      <button onclick="addVal('2')">2</button>
+      <button onclick="addVal('3')">3</button>
+      <button onclick="addVal('-')">−</button>
+      
+
+      <button onclick="addVal('4')">4</button>
+      <button onclick="addVal('5')">5</button>
+      <button onclick="addVal('6')">6</button>
+      <button onclick="addVal('+')">+</button>
+
+
+      <button onclick="addVal('7')">7</button>
+      <button onclick="addVal('8')">8</button>
+      <button onclick="addVal('9')">9</button>
+      <button onclick="addVal('*')">×</button>
+
+      <button onclick="addVal('0')" class="wide">0</button>
+      <button onclick="addVal('.')" >.</button>
+      <button onclick="showResult()">=</button>
+    </div>
+  </div>
+
+<script src="calc_logic.js"></script>
+</body>
+</html>
